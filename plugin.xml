@@ -47,7 +47,7 @@
     </config-file>
     <config-file target="AndroidManifest.xml" parent="application">
       <activity android:name="cordova.plugin.cardcamera.CardCameraActivity"
-        android:label="@string/app_name" android:style="@style/MaterialTheme">
+        android:label="@string/app_name" android:theme="@style/MaterialTheme">
       </activity>
     </config-file>
 
