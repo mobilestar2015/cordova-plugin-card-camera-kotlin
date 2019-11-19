@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const xml2js = require('xml2js');
 
-const PLUGIN_ID = "cordova-plugin-hello-kotlin";
+const PLUGIN_ID = "cordova-plugin-card-camera";
 const androidPlatformRoot = "./platforms/android/";
 
 let  deferral;
@@ -37,11 +37,11 @@ function removeKotlinSourceFiles(){
                 break;
             }
     });
-    
+
 }
 module.exports = function(ctx) {
     try{
-        deferral = ctx.requireCordovaModule('q').defer();
+        deferral = require('q').defer();
         removeKotlinSourceFiles();
         deferral.resolve();
     }catch(e){

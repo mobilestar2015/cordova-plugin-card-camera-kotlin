@@ -1,7 +1,7 @@
 const fs = require('fs');
 const xml2js = require('xml2js');
 
-const PLUGIN_ID = "cordova-plugin-hello-kotlin";
+const PLUGIN_ID = "cordova-plugin-card-camera";
 const gradlePath = './platforms/android/app/build.gradle'; // cordova-android@7+ path
 
 let  deferral;
@@ -48,7 +48,7 @@ function addSupport(){
 }
 module.exports = function(ctx) {
     try{
-        deferral = ctx.requireCordovaModule('q').defer();
+        deferral = require('q').defer();
         addSupport();
         deferral.resolve();
     }catch(e){

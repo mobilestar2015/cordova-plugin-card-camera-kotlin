@@ -1,6 +1,6 @@
 {
     "version": "1.0.0",
-    "name": "cordova-plugin-hello-kotlin",
+    "name": "cordova-plugin-card-camera",
     "cordova_name": "Hello Kotlin",
     "description": "",
     "author": "Dave Alden",
@@ -11,7 +11,7 @@
     },
     "issue": "https://github.com/dpa99c/cordova-plugin-hello-kotlin/issues",
     "cordova": {
-        "id": "cordova-plugin-hello-kotlin",
+        "id": "cordova-plugin-card-camera",
         "platforms": [
             "android"
         ]
