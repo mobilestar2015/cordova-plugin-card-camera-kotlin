@@ -1,7 +1,7 @@
 /*global cordova, module*/
 
 module.exports = {
-  takePictures: function (input, successCallback, errorCallback) {
+  takePictures: function (successCallback, errorCallback) {
     cordova.exec(successCallback, errorCallback, "CardCamera", "takePictures", [input]);
   }
 };
