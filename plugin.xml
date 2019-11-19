@@ -62,9 +62,9 @@
     <source-file src="src/android/ErrorDialog.kt" target-dir="app/src/main/java/cordova/plugin/cardcamera"/>
     <source-file src="src/android/ImageSaver.kt" target-dir="app/src/main/java/cordova/plugin/cardcamera"/>
 
-    <resource-file src="src/android/res/drawables-xxhdpi/cardcam_overlay.xml" target="res/drawables-xxhdpi" />
-    <resource-file src="src/android/res/drawables-xxhdpi/ic_checkmark.xml" target="res/drawables-xxhdpi" />
-    <resource-file src="src/android/res/drawables-xxhdpi/retake_photo.png" target="res/drawables-xxhdpi" />
+    <resource-file src="src/android/res/drawable-xxhdpi/cardcam_overlay.xml" target="res/drawable-xxhdpi" />
+    <resource-file src="src/android/res/drawable-xxhdpi/ic_checkmark.xml" target="res/drawable-xxhdpi" />
+    <resource-file src="src/android/res/drawable-xxhdpi/retake_photo.png" target="res/drawable-xxhdpi" />
     <resource-file src="src/android/res/layout/activity_camera.xml" target="res/layout" />
     <resource-file src="src/android/res/layout/fragment_card_camera.xml" target="res/layout" />
     <resource-file src="src/android/res/values/card_camera_colors.xml" target="res/values" />
