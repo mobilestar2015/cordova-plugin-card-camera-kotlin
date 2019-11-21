@@ -18,6 +18,31 @@
     <clobbers target="cardcamera" />
   </js-module>
 
+  <platform name="ios">
+    <config-file target="config.xml" parent="/*">
+      <feature name="CardCamera">
+        <param name="ios-package" value="CardCamera" />
+      </feature>
+
+      <source-file src="src/ios/CardCamera.swift" />
+      <source-file src="src/ios/CardCameraViewController.swift" />
+      <resource-file src="src/ios/CardCamera.storyboard" target="Resources/CardCamera.storyboard" />
+      <resource-file src="src/ios/ic_checkmark.png" target="Resources/ic_checkmark.png" />
+      <resource-file src="src/ios/ic_retake_photo.png" target="Resources/ic_retake_photo.png" />
+
+      <preference name="CAMERA_USAGE_DESCRIPTION" default="Camera" />
+      <config-file target="*-Info.plist" parent="NSCameraUsageDescription">
+        <string>$CAMERA_USAGE_DESCRIPTION</string>
+      </config-file>
+
+      <podspec>
+        <pods use-frameworks="true">
+          <pod name="MaterialComponents/Buttons" />
+        </pods>
+      </podspec>
+    </config-file>
+  </platform>
+
   <platform name="android"
             kotlin="1.3.50">
     <!-- Add Kotlin support -->
